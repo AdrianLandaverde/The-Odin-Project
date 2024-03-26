@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Rock Paper Scissors</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Rock Paper Scissors Game</h1>
+        <h2>Could you beat JS?</h2>
+
+        <h3>Select your weapon</h3>
+        
+
+        <div class="choices">
+            <div class="choice">
+                <img src="images/rock.png" alt="Rock">
+                <button id="Rock" class="choice-button">Rock</button>
+            </div>
+            <div class="choice">
+                <img src="images/paper.png" alt="Paper">
+                <button id="Paper" class="choice-button">Paper</button>
+            </div>
+            <div class="choice">
+                <img src="images/scissors.png" alt="Scissors">
+                <button id="Scissors" class="choice-button">Scissors</button>
+            </div>
+        </div>
+
+
+        <div id="result" class="result">
+            <h2>Results</h2>
+            <div class="result-columns">
+                <div class="column">
+                    <p id="player-choice">You chose: <strong></strong></p>
+                    <p id="winner"></p>
+                </div>
+                <div class="column">
+                    <p id="computer-choice">The computer chose: <strong></strong></p>
+                    <p id="score">Score: 0</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="functions.js"></script>
+
+    </body>
+</html>
