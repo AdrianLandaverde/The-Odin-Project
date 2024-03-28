@@ -1,27 +1,109 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Roboto Slab', serif;
-    padding-bottom: 80px;
+@font-face {
+    font-family: 'NorseBold';
+    /* replace with your font's name */
+    src: url('intermediate-html-and-css/sign-up-form/fonts/Norse-Bold.otf');
+    /* replace with your font file's path and name */
 }
 
-img {
-    max-width: 50%;
-    height: auto;
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
+
+.container {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+
+.sidebar {
+    position: relative;
+    width: 20%;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    color: #f1c40f;
+    flex: 0 0 20%;
+}
+
+@media (max-width: 800px) {
+    .sidebar, .main-container {
+        flex: 1 0 100%;
+        height: auto;
+    }
+}
+
+
+.sidebar .profile {
+    width: min(80%, 300px);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sidebar h2 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+
 h2, h3 {
     color: #f1c40f;
 }
 
-.Projects {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.main-container{
+    width: 100%;
+    padding: 20px;
+    flex:1;
 }
 
-.Foundations .Project {
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.title img {
+    width: 8em;
+    height: 8em;
+}
+
+.main-container h1 {
+    font-family: 'NorseBold';
+    font-size: 64px;
+    color: #f1c40f;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.Project {
     background-color: #f1c40f;
     margin: 10px;
     padding: 20px;
@@ -29,17 +111,17 @@ h2, h3 {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.Foundations .Project h3 {
+.Project h3 {
     margin: 0;
     color: #333;
     text-align: center;
 }
 
-.Foundations .Project p {
+.Project p {
     color: #333;
 }
 
-.Foundations .Project a {
+.Project a {
     color: #333;
     text-decoration: none;
     display: inline-block;
@@ -50,14 +132,14 @@ h2, h3 {
     transition: background-color 0.3s ease;
 }
 
-.Foundations .Project a:hover {
+.Project a:hover {
     background-color: #333;
     color: #f1c40f;
 }
 
 footer {
-    background-color: #f1c40f;
-    color: #333;
+    background-color: #333;
+    color: #f1c40f;
     padding: 20px;
     text-align: center;
     position: fixed;
@@ -67,8 +149,9 @@ footer {
     box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
 }
 
-footer p, footer a {
+footer p,
+footer a {
     margin: 0;
-    color: #333;
+    color: #f1c40f;
     text-decoration: none;
 }
