@@ -20,9 +20,13 @@ It includes the foundations of web development, such as HTML, CSS, JavaScript, G
 
 - [Calculator](https://adrianlandaverde.github.io/The-Odin-Project/pages/calculator/index.html) :1234:
 
-## :construction: Intermediate HTML and CSS
+## :art: Intermediate HTML and CSS
 
-***In progress...***
+- [Tables](https://adrianlandaverde.github.io/The-Odin-Project/intermediate-html-and-css/tables/index.html)
+
+- [Sign-Up Form](https://adrianlandaverde.github.io/The-Odin-Project/intermediate-html-and-css/sign-up-form/index.html)
+
+- [Admin Dashboard](https://adrianlandaverde.github.io/The-Odin-Project/intermediate-html-and-css/admin-dashboard/index.html)
 
 ## :zap: JavaScript
 
