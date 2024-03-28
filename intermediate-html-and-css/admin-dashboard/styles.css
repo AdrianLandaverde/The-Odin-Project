@@ -1,0 +1,237 @@
+body {
+    display: grid;
+    grid-template-columns: auto 3fr;
+    grid-template-rows: auto 1fr 1fr;
+    gap: 10px;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebar {
+    grid-row: 1 / -1;
+    grid-column: 1;
+    background-color: #38bdf8;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.search {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.user {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+}
+
+.user-big {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.user-actions{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.content {
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    background-color: rgba(181, 193, 203, 0.627);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects{
+    grid-row: 1/3;
+    grid-column: 1;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.announcements{
+    grid-row: 1;
+    grid-column: 2;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.trending{
+    grid-row: 2;
+    grid-column: 2;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.link, .title {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.title svg{
+    height: 3em;
+    width: 3em;
+    fill: white;
+    margin-right: 10px;
+
+}
+
+.link a {
+    text-decoration: none; /* remove underline */
+    color: inherit; /* use the same color as the parent element */
+    margin-left: 10px; /* add some space between the icon and the text */
+}
+
+.link svg {
+    height:2em; /* make the icon the same size as the text */
+    width: 2em; /* make the icon the same size as the text */
+    fill: white;
+}
+
+.main-links, .other-links{
+    margin-top: 50px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 50px;
+    padding: 10px;
+    width: 80%;
+    height: 40px;
+    margin: 10px 10px;
+}
+
+.search input[type="text"] {
+    border: none;
+    background-color: transparent;
+    flex-grow: 1;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.search button, .btn-actions {
+    background-color: #38bdf8;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.user, .user-big {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 20px;
+    height: 100%;
+}
+
+.user svg{
+    height: 3em;
+    width: 3em;
+    fill: #38bdf8;
+}
+
+.user-big svg{
+    height: 5em;
+    width: 5em;
+    fill: #38bdf8;
+}
+
+.project-card {
+    border-left: 4px solid #ffdf40;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.project-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.project-actions svg {
+    height: 1.5em;
+    width: 1.5em;
+    fill: #000000;
+}
+
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.announcement-card,.trending-card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.announcement-card h4 {
+    margin-top: 0;
+}
+
+.announcement-card p {
+    margin-bottom: 10px;
+}
+
+.announcement-card hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.trend {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.trend svg {
+    width: 50px;
+    height: 50px;
+    fill: #ff4081;
+}
+
+.trend h4, .trend p {
+    margin: 0;
+}
