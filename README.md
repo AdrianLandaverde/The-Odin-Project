@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="docs\images\logo.png" />
+    <img src="images/logo.png" />
 </p>
 
 # :books: THE ODIN PROJECT :books:
