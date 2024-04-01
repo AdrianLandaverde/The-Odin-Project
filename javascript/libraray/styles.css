@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* AliceBlue */
+    color: #483d8b; /* DarkSlateBlue */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #483d8b; /* DarkSlateBlue */
+    color: #f0f8ff; /* AliceBlue */
+    padding: 10px 0;
+    margin-top: 0;
+    text-align: center;
+}
+
+#library {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.book-card {
+    position: relative;
+    background-color: #e6e6fa; /* Lavender */
+    border: 1px solid #9370db; /* MediumPurple */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.book-card h2 {
+    color: #483d8b; /* DarkSlateBlue */
+    margin-bottom: 10px;
+}
+
+.book-card p {
+    color: #9370db; /* MediumPurple */
+    margin-bottom: 10px;
+}
+
+#add-book-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #9370db; /* MediumPurple */
+    color: #f0f8ff; /* AliceBlue */
+    border: none;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    overflow: visible;
+}
+
+#add-book-button::after {
+    content: ' Add book';
+    position: absolute;
+    right: -120px;
+    top: 0;
+    transition: all 0.5s ease;
+    white-space: nowrap;
+    opacity: 0;
+    color: #483d8b;
+}
+
+#add-book-button:hover::after {
+    right: 70px;
+    opacity: 1;
+}
+
+#book-form {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#book-form form {
+    position: relative;
+    background-color: #e6e6fa; /* Lavender */
+    border: 1px solid #9370db; /* MediumPurple */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 15% auto;
+    width: 80%;
+}
+
+#book-form label,
+#book-form input {
+    color: #483d8b; /* DarkSlateBlue */
+    margin-bottom: 10px;
+}
+
+#book-form input[type="text"],
+#book-form input[type="number"],
+#book-form select {
+    padding: 10px;
+    border: 1px solid #9370db; /* MediumPurple */
+    border-radius: 5px;
+    background-color: #f8f8ff; /* GhostWhite */
+    transition: border-color 0.3s ease;
+}
+
+#book-form input[type="text"]:focus,
+#book-form input[type="number"]:focus,
+#book-form select:focus {
+    border-color: #483d8b; /* DarkSlateBlue */
+    outline: none;
+}
+
+#book-form input[type="submit"] {
+    background-color: #9370db; /* MediumPurple */
+    color: #f0f8ff; /* AliceBlue */
+    padding: 14px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+#book-form input[type="submit"]:hover {
+    background-color: #483d8b; /* DarkSlateBlue */
+}
+
+.change-status-button {
+    background-color: #9370db; /* MediumPurple */
+    color: #f0f8ff; /* AliceBlue */
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.change-status-button:hover {
+    opacity: 0.8;
+}

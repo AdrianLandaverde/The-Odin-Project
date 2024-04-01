@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>JavaScript Library</h1>
+
+        <div id="library"></div>
+
+        <button id="add-book-button">+</button>
+
+        <div id="book-form" style="display: none;">
+            <form>
+                <span id="close-button" style="float: right; cursor: pointer;">&times;</span>
+                <label for="title">Title:</label><br>
+                <input type="text" id="title" name="title"><br>
+                <label for="author">Author:</label><br>
+                <input type="text" id="author" name="author"><br>
+                <label for="pages">Number of Pages:</label><br>
+                <input type="number" id="pages" name="pages"><br>
+                <label for="read">Read:</label><br>
+                <select id="read" name="read">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br>
+                <input type="submit" value="Add Book">
+            </form>
+        </div>
+
+
+        
+        <script src="main.js" async defer></script>
+    </body>
+</html>
