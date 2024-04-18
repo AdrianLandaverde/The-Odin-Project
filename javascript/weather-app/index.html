@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="weather-app">
+        <form id="city-form">
+            <input type="text" id="city-input" placeholder="Enter a city" required>
+            <button type="submit"><i class="fas fa-search"></i> Get Weather</button>
+        </form>
+        <div class="info-section">
+            <div class="box temperature"><i class="fas fa-thermometer-half"></i><h2></h2></div>
+            <div class="box humidity"><i class="fas fa-tint"></i><p></p></div>
+            <div class="box wind"><i class="fas fa-wind"></i><p></p></div>
+            <div class="box condition"><i class="fas fa-cloud-sun"></i><p></p></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
