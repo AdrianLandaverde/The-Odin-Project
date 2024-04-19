@@ -1,0 +1,101 @@
+#experiences {
+    padding: 50px 0;
+    position: relative;
+}
+
+#experiences h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #2F4F4F;
+}
+
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #2F4F4F; /* Change to a brown color */
+    left: 50%;
+    margin-left: -1px;
+}
+
+.experience {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.experience::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: -15px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: #2F4F4F transparent transparent transparent; /* Change to a brown color */
+}
+
+.experience .details {
+    padding: 20px;
+    background-color: #a5d6a7; /* Light green color */
+    border: none; /* Remove border */
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Larger box shadow for more volume */
+}
+
+.experience .details:hover {
+    background-color: #c8e6c9; /* Lighter green color on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Even larger box shadow on hover */
+}
+
+.experience .details h2, .experience .details h3, .experience .details h4 {
+    margin: 0 0 10px 0;
+    color: #2F4F4F; /* Change to a dark brown color */
+}
+
+.experience:nth-child(odd) {
+    direction: ltr;
+    float: left;
+    clear: both;
+}
+
+.experience:nth-child(odd)::before {
+    right: -15px;
+    left: auto;
+    border-color: #2F4F4F transparent transparent transparent; /* Change to a brown color */
+}
+
+.experience:nth-child(odd) .details {
+    direction: ltr;
+}
+
+.experience:nth-child(even) {
+    direction: ltr;
+    float: right;
+    clear: both;
+}
+
+.experience:nth-child(even)::before {
+    right: auto;
+    left: -15px;
+    border-color: #2F4F4F transparent transparent transparent; /* Change to a brown color */
+}
+
+.experience:nth-child(even) .details {
+    direction: ltr;
+}
+
+.experience::after {
+    content: "";
+    display: table;
+    clear: both;
+}

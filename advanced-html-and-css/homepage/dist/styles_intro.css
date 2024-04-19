@@ -1,0 +1,39 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+#intro {
+    background-image: url('../images/wallpaper.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    height: 100vh;
+    color: #F0E68C; /* Khaki color for better visibility on dark background */
+}
+
+.intro-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Indie Flower', cursive;
+}
+
+.intro-text h1 {
+    font-size: 2.5em;
+}
+
+.intro-text p {
+    font-size: 1.2em;
+}
+
+.intro-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,171 @@
+#skills {
+    padding: 50px;
+    background-color: #F5F5DC; /* Beige background for a nature-based color scheme */
+}
+
+#skills h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #2F4F4F;
+}
+
+.skills-boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #2F4F4F;
+}
+
+.skill-box {
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #8FBC8F; /* Dark Sea Green for a nature-based color scheme */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 600px) {
+    .skill-box {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .skill-box {
+        width: 33.33%;
+    }
+}
+
+.skill-box h2 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.skill-box p {
+    margin-bottom: 20px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    margin: 10px;
+}
+
+/* CSS */
+.skill svg {
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+    fill: #2F4F4F; /* Adjust color as needed */
+    transition: fill 0.3s ease-in-out; /* Transition effect for smooth color change */
+}
+
+.skill svg:hover {
+    transform: scale(1.3);
+}
+
+#icon-python svg:hover {
+    fill: #3776AB; /* Adjust color as needed */
+}
+
+#icon-pandas svg:hover {
+    fill: #150458; /* Adjust color as needed */
+}
+
+#icon-plotly svg:hover {
+    fill: #3F4F75; /* Adjust color as needed */
+}
+
+#icon-r svg:hover {
+    fill: #276DC3; /* Adjust color as needed */
+}
+
+#icon-sas svg:hover {
+    fill: #00aceb; /* Adjust color as needed */
+}
+
+#icon-powerbi svg:hover {
+    fill: #F2C811; /* Adjust color as needed */
+}
+
+#icon-tableau svg:hover {
+    fill: #003366; /* Adjust color as needed */
+}
+
+#icon-excel svg:hover {
+    fill: #217346; /* Adjust color as needed */
+}
+
+#icon-sql svg:hover {
+    fill: #4479A1; /* Adjust color as needed */
+}
+
+#icon-scikitlearn svg:hover {
+    fill: #F7931E; /* Adjust color as needed */
+}
+
+#icon-tensorflow svg:hover {
+    fill: #FF6F00; /* Adjust color as needed */
+}
+
+#icon-torch svg:hover {
+    fill: #EE4C2C; /* Adjust color as needed */
+}
+
+#icon-opencv svg:hover {
+    fill: #5C3EE8; /* Adjust color as needed */
+}
+
+#icon-huggingface svg:hover {
+    fill: #FFD166; /* Adjust color as needed */
+}
+
+#icon-fastapi svg:hover {
+    fill: #009688; /* Adjust color as needed */
+}
+
+#icon-aws svg:hover {
+    fill: #FF9900; /* Adjust color as needed */
+}
+
+#icon-azure svg:hover {
+    fill: #0089D6; /* Adjust color as needed */
+}
+
+#icon-gcp svg:hover {
+    fill: #4285F4; /* Adjust color as needed */
+}
+
+#icon-docker svg:hover {
+    fill: #2496ED; /* Adjust color as needed */
+}
+
+#icon-openai svg:hover {
+    fill: #05ba81; /* Adjust color as needed */
+}
+
+#icon-html svg:hover {
+    fill: #E34F26; /* Adjust color as needed */
+}
+
+#icon-css svg:hover {
+    fill: #1572B6; /* Adjust color as needed */
+}
+
+#icon-javascript svg:hover {
+    fill: #F7DF1E; /* Adjust color as needed */
+}
+
+#icon-react svg:hover {
+    fill: #61DAFB; /* Adjust color as needed */
+}
+
